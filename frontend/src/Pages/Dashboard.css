@@ -1,0 +1,142 @@
+.dash-wrapper {
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 30px 20px;
+}
+
+.dash-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dash-header h1 {
+  font-size: 22px;
+  color: #2d3748;
+}
+
+.dash-header p {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.btn-logout {
+  background: #fff;
+  color: #e53e3e;
+  border: 1.5px solid #fed7d7;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background: #fff5f5;
+}
+
+.progress-bar {
+  background: #e2e8f0;
+  border-radius: 99px;
+  height: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #FF6B35;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.add-task-form input {
+  flex: 1;
+  padding: 13px 16px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.btn-add {
+  background: #FF6B35;
+  color: white;
+  padding: 13px 20px;
+  white-space: nowrap;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  padding: 16px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+
+.task-item.done {
+  opacity: 0.6;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #FF6B35;
+  cursor: pointer;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.task-item.done .task-title {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.btn-delete {
+  background: none;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.btn-delete:hover {
+  opacity: 1;
+  background: #fff0f0;
+  transform: none;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #aaa;
+  padding: 40px;
+  font-size: 15px;
+}
